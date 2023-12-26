@@ -1,0 +1,16 @@
+body{
+    font-family: $body-font;
+    font: {
+        size: map-get($font-sizes , "md" );
+    };
+    color: color("dark");
+    background-color: color();
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+p{
+    font-family: $italic-font;
+}
+
+
