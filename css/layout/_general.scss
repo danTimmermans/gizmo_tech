@@ -10,9 +10,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
     letter-spacing: -2px;
 }
-p{
-    font-family: $italic-font;
-    letter-spacing: -1px ;
+img{
+    display: block;
 }
-
+.txt-orange{
+    color: color('orange');
+}
+.txt-black{
+    color: color('black');
+}
+.bg-orange{
+    background: color('orange');
+}
+.bg-black{
+    background: color('black');
+}
 
