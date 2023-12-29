@@ -29,29 +29,34 @@
 </head>
 <body>
     <nav>
-        <!-- Burger Menu -->
-        <div class="main-navLinks">
-            <button class="burger" type="button"  aria-label="Toggle navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <div class="phone-nav">
+            <!-- Burger Menu -->
+            <!-- <div class="main-nav-links"> -->
+                <button class="burger" type="button"  aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            <!-- </div> -->
+            <!-- navigation -->
+            <div class="logos">
+                <a id="gizmo-perso"  href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page">
+                    <img src="material/logos/svg/GIZMO_PERSO.svg" alt="Personnage Gizmo">
+                </a>
+                <a id="gizmo-logo" href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page">
+                    <img src="material/logos/svg/LOGO-GIZMO.svg" alt="Logo Gizmo Tech">
+                </a>
+                <span id="catch-phrase" class="txt-orange">Buildibg better Worlds</span>
+            </div>
         </div>
-        <!-- navigation -->
-        <div class="logos">
-            <a  href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page">
-                <img src="material/logos/svg/GIZMO_PERSO.svg" alt="Personnage Gizmo">
-            </a>
-            <a  href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page">
-                <img src="material/logos/svg/LOGO-GIZMO.svg" alt="Logo Gizmo Tech">
-            </a>
-            <span class="txt-orange">Buildibg better Worlds</span>
-        </div>
-        <div class="search-field">
+        <div id="search-field" class="search-field invisible ">
             <input type="text" id="site-search" name="search" placeholder="Chercher un produit, une marque,  une promo." >            
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="customer">
+            <div id="loupe" class="loupe">
+                <img src="material/logos/svg/LOUPE.svg" alt="Symbole loupe">
+            </div>
             <div class="login">
                 <img src="material/logos/svg/GIZMO-OMBRE.svg" alt="Symbole login">
             </div>
@@ -83,7 +88,40 @@
                 <span>Promo Gizmo</span>
                 <i class="fa-solid fa-caret-down"></i>
             </div>
-        </div>navigation
+        </div>
     </nav>
+    <div id="mobile-search-field" class="mobile-search-field-invisible">
+        <div  class="search-field " >
+            <input type="text" id="site-search" name="search" placeholder="Chercher un produit, une marque,  une promo." disabled >
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+    <div class="lorem">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat id minima debitis quia, nisi est enim ut impedit beatae accusantium consequuntur atque iste pariatur. Id hic ut aliquam saepe.
+        Eveniet asperiores delectus dolor dignissimos suscipit molestiae itaque voluptatem odio consectetur? Suscipit ratione excepturi laudantium tenetur, pariatur nemo aut dolore ducimus, consequuntur repellendus labore beatae. Exercitationem amet ut similique officia.
+        Neque deserunt harum porro laudantium beatae qui sed minima facilis. Unde eum eveniet sunt iusto nesciunt rerum, soluta, laudantium alias eius autem atque. Dolore odit excepturi inventore officiis cupiditate facere!
+        Sed totam enim dolore voluptatibus vero quibusdam saepe doloribus esse eum consequatur perspiciatis quia sequi placeat neque aliquam inventore, itaque accusantium. Facere rerum debitis eaque consectetur dolorum aspernatur maxime placeat.
+        Iusto asperiores quis maiores nostrum odio eum. Itaque totam commodi similique, vero ea odio harum eos eveniet deleniti perferendis omnis culpa quisquam velit tempora odit in porro expedita vel accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat id minima debitis quia, nisi est enim ut impedit beatae accusantium consequuntur atque iste pariatur. Id hic ut aliquam saepe.
+        Eveniet asperiores delectus dolor dignissimos suscipit molestiae itaque voluptatem odio consectetur? Suscipit ratione excepturi laudantium tenetur, pariatur nemo aut dolore ducimus, consequuntur repellendus labore beatae. Exercitationem amet ut similique officia.
+        Neque deserunt harum porro laudantium beatae qui sed minima facilis. Unde eum eveniet sunt iusto nesciunt rerum, soluta, laudantium alias eius autem atque. Dolore odit excepturi inventore officiis cupiditate facere!
+        Sed totam enim dolore voluptatibus vero quibusdam saepe doloribus esse eum consequatur perspiciatis quia sequi placeat neque aliquam inventore, itaque accusantium. Facere rerum debitis eaque consectetur dolorum aspernatur maxime placeat.
+        Iusto asperiores quis maiores nostrum odio eum. Itaque totam commodi similique, vero ea odio harum eos eveniet deleniti perferendis omnis culpa quisquam velit tempora odit in porro expedita vel accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat id minima debitis quia, nisi est enim ut impedit beatae accusantium consequuntur atque iste pariatur. Id hic ut aliquam saepe.
+        Eveniet asperiores delectus dolor dignissimos suscipit molestiae itaque voluptatem odio consectetur? Suscipit ratione excepturi laudantium tenetur, pariatur nemo aut dolore ducimus, consequuntur repellendus labore beatae. Exercitationem amet ut similique officia.
+        Neque deserunt harum porro laudantium beatae qui sed minima facilis. Unde eum eveniet sunt iusto nesciunt rerum, soluta, laudantium alias eius autem atque. Dolore odit excepturi inventore officiis cupiditate facere!
+        Sed totam enim dolore voluptatibus vero quibusdam saepe doloribus esse eum consequatur perspiciatis quia sequi placeat neque aliquam inventore, itaque accusantium. Facere rerum debitis eaque consectetur dolorum aspernatur maxime placeat.
+        Iusto asperiores quis maiores nostrum odio eum. Itaque totam commodi similique, vero ea odio harum eos eveniet deleniti perferendis omnis culpa quisquam velit tempora odit in porro expedita vel accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat id minima debitis quia, nisi est enim ut impedit beatae accusantium consequuntur atque iste pariatur. Id hic ut aliquam saepe.
+        Eveniet asperiores delectus dolor dignissimos suscipit molestiae itaque voluptatem odio consectetur? Suscipit ratione excepturi laudantium tenetur, pariatur nemo aut dolore ducimus, consequuntur repellendus labore beatae. Exercitationem amet ut similique officia.
+        Neque deserunt harum porro laudantium beatae qui sed minima facilis. Unde eum eveniet sunt iusto nesciunt rerum, soluta, laudantium alias eius autem atque. Dolore odit excepturi inventore officiis cupiditate facere!
+        Sed totam enim dolore voluptatibus vero quibusdam saepe doloribus esse eum consequatur perspiciatis quia sequi placeat neque aliquam inventore, itaque accusantium. Facere rerum debitis eaque consectetur dolorum aspernatur maxime placeat.
+        Iusto asperiores quis maiores nostrum odio eum. Itaque totam commodi similique, vero ea odio harum eos eveniet deleniti perferendis omnis culpa quisquam velit tempora odit in porro expedita vel accusantium!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat id minima debitis quia, nisi est enim ut impedit beatae accusantium consequuntur atque iste pariatur. Id hic ut aliquam saepe.
+        Eveniet asperiores delectus dolor dignissimos suscipit molestiae itaque voluptatem odio consectetur? Suscipit ratione excepturi laudantium tenetur, pariatur nemo aut dolore ducimus, consequuntur repellendus labore beatae. Exercitationem amet ut similique officia.
+        Neque deserunt harum porro laudantium beatae qui sed minima facilis. Unde eum eveniet sunt iusto nesciunt rerum, soluta, laudantium alias eius autem atque. Dolore odit excepturi inventore officiis cupiditate facere!
+        Sed totam enim dolore voluptatibus vero quibusdam saepe doloribus esse eum consequatur perspiciatis quia sequi placeat neque aliquam inventore, itaque accusantium. Facere rerum debitis eaque consectetur dolorum aspernatur maxime placeat.
+        Iusto asperiores quis maiores nostrum odio eum. Itaque totam commodi similique, vero ea odio harum eos eveniet deleniti perferendis omnis culpa quisquam velit tempora odit in porro expedita vel accusantium!</p>
+    </div>
 </body>
 </html>

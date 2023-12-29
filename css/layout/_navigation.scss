@@ -1,9 +1,11 @@
 nav{
     background-color: color("black");
     @include fixed(top);
-    // @include display-flex();
+    @include display-flex();
     align-items: center;
+    justify-content: space-between;
     padding: 15px 25px ;
+    position: fixed;
     .nav-icon{
         display: block;
         width: 120px;
@@ -12,21 +14,33 @@ nav{
         font-size: font-size("xxs");
         text-transform: uppercase;
         letter-spacing: 1px;
+    }
+    .phone-nav{
+        display: flex;
+        align-items: center;
+    }
+    #gizmo-perso{
+        width: 50px;
     } 
-    .burger{
+    #gizmo-logo,#catch-phrase{
         display: none;
-            width: 30px;
-            height: 30px;
+    }
+    #loupe:hover{
+        cursor: pointer;
+    }
+    .burger{
+            width: 40px;
             cursor: pointer;
-            // display: flex;
+            display: flex;
             border: none;
-            background: #fafafa;
+            background: color("black");
             align-items: center;
+            justify-content: center;
             position: relative;
             span{
                 display: block;
-                width: 100%;
-                height: 2px;
+                width: 80%;
+                height: 3px;
                 background: color("orange");
                 position: absolute;
                 pointer-events: none;
@@ -34,50 +48,17 @@ nav{
             }
     }
     .burger span:nth-child(1){
-        transform: translateY(7px);
+        transform: translateY(9px);
     }
     .burger span:nth-child(3){
-        transform: translateY(-7px);
+        transform: translateY(-9px);
     }
-    .search-field{
-        background-color: color('grey');
-        border-radius: 5px;
-        position: relative;
-        input{
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 5px;
-            font-family: $italic-font;
-            font-size: font-size("xs");;
-            padding: 8px 40px 8px 20px;
-            border: none; 
-            &:focus{
-                outline: none;
-            }           
-        }
-        button{
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 50px;
-            height: 100%;
-            border-radius: 50%;
-            cursor: pointer;
-            border: none;
-            background: none;
-            font-size: 20px;
-            i{
-                color: color("grey");
-                &:hover{
-                    color: color("black");
-                }
-            }
-        }
+    .invisible{
+        display: none;
     }
     .customer{
-        // display: flex;
-        // width: 105px;
+        display: flex;
+        // width: 100%;
         img{
             width: 40px;
         }
@@ -91,7 +72,65 @@ nav{
             border-left: 0px;
         }
     }
-    // .general-navigation{
+    .general-navigation{
+        display: none;
+    }
+}
+.search-field{
+    background: color('light');
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    input{
 
-    // }
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 5px;
+        font-family: $italic-font;
+        font-size: font-size("xs");
+        padding: 8px 40px 8px 20px;
+        &:focus{
+            outline: none;
+        }           
+    }
+    button{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 100%;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 20px;
+        i{
+            color: color("grey");
+            &:hover{
+                color: color("black");
+            }
+        }
+    }
+}
+.mobile-search-field-invisible{
+    width: 100%;
+    position: fixed;
+    transform: translate(-100%);
+    top: 70px;
+    transition: transform 0.3s ease-out;
+    z-index: 1000;
+}
+.search-field-visible{
+    padding: 10px 20px;
+    transform: translate(0%);
+}
+body{
+    background-color: red;
+}
+.lorem{
+    position: relative;
+    top: 60px;
+    width: 80%;
+    margin: 0 auto;
 }
