@@ -4,7 +4,7 @@ nav{
     @include display-flex();
     align-items: center;
     justify-content: space-between;
-    padding: 15px 25px ;
+    padding: 15px 15px ;
     position: fixed;
     .nav-icon{
         display: block;
@@ -241,10 +241,7 @@ top: 80px;
 }
 @include media-breakpoint-up("xl"){
     nav{
-
         grid-template-rows: 50px 50px;
         grid-template-columns: 12% 82% 6%;
-
-    }
-  
+    } 
 }

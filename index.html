@@ -31,14 +31,12 @@
     <nav>
         <div class="phone-nav">
             <!-- Burger Menu -->
-            <!-- <div class="main-nav-links"> -->
                 <button class="burger" type="button"  aria-label="Toggle navigation" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-            <!-- </div> -->
-            <!-- navigation -->
+            <!-- logos -->
             <div class="logos">
                 <a id="gizmo-perso"  href="index.html" class="nav-icon" aria-label="visit homepage" aria-current="page">
                     <img src="material/logos/svg/GIZMO_PERSO.svg" alt="Personnage Gizmo">
@@ -49,10 +47,12 @@
                 <span id="catch-phrase" class="txt-orange">Buildibg better Worlds</span>
             </div>
         </div>
+        <!-- champ de recherche > 992px -->
         <div id="search-field" class="search-field invisible ">
             <input type="text" id="site-search" name="search" placeholder="Chercher un produit, une marque,  une promo." >            
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
+        <!-- sone client + panier -->
         <div class="customer">
             <div id="loupe" class="loupe">
                 <img src="material/logos/svg/LOUPE.svg" alt="Symbole loupe">
@@ -64,6 +64,7 @@
                 <img src="material/logos/svg/PANIER.svg" alt="Symbole Panier">
             </div>
         </div>
+        <!-- navigation principale écran > 992px -->
         <div class="general-navigation">
             <div class="txt-black bg-orange nav-element">
                 <span>Tous nos produits</span>
@@ -91,12 +92,14 @@
         </div>
         
     </nav>
+    <!-- champ de recherche ecran < 992 px -->
     <div id="mobile-search-field" class="mobile-search-field-invisible">
         <div  class="search-field " >
-            <input type="text" id="site-search" name="search" placeholder="Chercher un produit, une marque,  une promo." disabled >
+            <input type="text" id="wide-screen-site-search" name="search" placeholder="Chercher un produit, une marque,  une promo." disabled >
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
     </div>
+    <!-- menu général ecran < 992px -->
     <div class="navLinks-container">
         <div class="navlinks-items">
             <a href="index.html" aria-current="page">Nos promos Gizmo</a>
@@ -140,7 +143,43 @@
             </a>
         </div>
     </div>
+    <!-- modale compte client -->
+    <div class="modal-client-background">
+        <div class="modal-client">
+            <div class="client-account">
+                <div>
+                    <h2>Déjà Client ?</h2>
+                </div>
+                <div class="modal-client-logo">
+                    <img src="material/logos/svg/GIZMO-OMBRE.svg" alt="Symbole login">
+                </div>
+            </div>
+            <!-- inputs -->
+            <div class="client-info">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Mot de passe">
+                <div class="new-password">
+                    <span>Mot de passe oublié ?</span>
+                </div>
+                <div class="rester-connecte">
+                    <input type="checkbox" id="stay-connected" name="stay-connected" value="connected">
+                    <span>Rester connecté</span>
+                </div>
+            </div>
+            <div class="connection">
+                <button>
+                        <span>Connexion</span>
+                        <i class="fa-solid fa-caret-right"></i>  
+                </button>
+                <h2>Nouveau client ?</h2>
+                <button>
+                        <span>Créer un compte</span>
+                        <i class="fa-solid fa-caret-right"></i>  
+                </button>
 
+            </div>
+        </div>
+    </div>
     <div class="body-wrapper">
         <div class="lorem">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere repellat id minima debitis quia, nisi est enim ut impedit beatae accusantium consequuntur atque iste pariatur. Id hic ut aliquam saepe.
