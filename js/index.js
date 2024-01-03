@@ -27,7 +27,7 @@ console.log(modalClient);
 console.log(clientButton);
 
 let openConnectionModal = () =>{
-    modalClient.classList.add('connection-modal-visible');
+    modalClient.classList.toggle('connection-modal-visible');
 }
 let closeConnectionModal = () =>{
     modalClient.classList.remove('connection-modal-visible');
