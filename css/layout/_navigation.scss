@@ -73,6 +73,16 @@ nav{
     }
     .customer{
         display: flex;
+        .login{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .panier{
+            &:hover{
+                cursor: pointer;
+            }
+        }
         img{
             width: 40px;
         }
@@ -174,10 +184,7 @@ nav{
 body{
     background-color: red;
 }
-.body-wrapper{
-position: relative;
-top: 80px;
-}
+
 // responsive
 @include media-breakpoint-up("lg"){
     nav{
@@ -235,6 +242,7 @@ top: 80px;
                 width: 100%;
                 text-align: center;
                 padding: 5px 0;
+                cursor: pointer;
             }
         }
     }

@@ -32,3 +32,12 @@
         }
     }
 }
+@each $color, $value in $colors{
+    .nav-element-#{$color} {
+        background-color: $value;
+        &:hover {
+            @include mytrans(.5s);
+            background-color: scale-color($value, $alpha: -20%);
+        }
+    }
+}

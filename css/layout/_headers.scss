@@ -1,0 +1,78 @@
+header{
+    position: relative;
+    background: url('../material/pics/PROMOS.jpg') center/cover;
+    height: 300px;
+    border: 5px solid color('orange');
+    @include media-breakpoint-up("md"){
+        height: 400px;
+    }
+    @include media-breakpoint-up("lg"){
+        height: 500px;
+        top: 55px;
+    }
+    @include media-breakpoint-up("xxl"){
+        height: 700px;
+        top: 55px;
+    }
+    a{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .gizmo-promos{
+        background-color: color('orange');
+        width: 50%;
+        h2{
+            color: color('white');
+            text-transform: uppercase;
+            padding: 5px 10px;
+            margin: 0;
+            text-align: center;
+        }
+    }
+    .header-logo{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        margin: 10px;
+        align-items: center;
+        margin: 20px auto;
+        @include media-breakpoint-up("md"){
+            justify-content: right;
+        }
+        .span-container{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.19646799116997793) 0%);
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            @include media-breakpoint-up("md"){
+                width: 40%;
+                font-size: font-size("xl");
+            }
+            @include media-breakpoint-up("lg"){
+                width: 50%;
+                font-size: font-size("xxl");
+            }
+            @include media-breakpoint-up("xl"){
+                width: 40%;
+                font-size: font-size("xxl");
+            }
+            span{
+                color: color('white');
+                text-align: justify;
+                padding: 0 5px;
+            }
+        }
+
+        .header-logo-svg{
+            img{
+                width: 80px;
+                @include media-breakpoint-up("md"){
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

@@ -34,3 +34,14 @@ let closeConnectionModal = () =>{
 
 clientButton.addEventListener('click', toggleConnectionModal);
 connection.addEventListener('click', closeConnectionModal);
+
+
+// modal panier vide
+let panier = document.querySelector('.panier');
+let modalePanierVide = document.querySelector('#modal-panier-vide');
+
+let modalPanierVideVisible = () =>{
+    modalePanierVide.classList.toggle('connection-modal-visible');
+}
+
+panier.addEventListener('click', modalPanierVideVisible);
