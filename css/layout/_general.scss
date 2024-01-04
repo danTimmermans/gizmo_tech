@@ -38,6 +38,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition:  0.3s ease-out;
     .modal-client{
         background-color: color('white');
         width: 100%;
