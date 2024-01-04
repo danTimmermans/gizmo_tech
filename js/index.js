@@ -23,10 +23,14 @@ burger.addEventListener('click', toggleNavMenu);
 // modal client
 let modalClient = document.querySelector('.modal-client-background');
 let clientButton =document.querySelector('.login');
-
+let connection = document.querySelector('.connection');
 
 let toggleConnectionModal = () =>{
     modalClient.classList.toggle('connection-modal-visible');
 }
+let closeConnectionModal = () =>{
+    modalClient.classList.remove('connection-modal-visible');
+}
 
 clientButton.addEventListener('click', toggleConnectionModal);
+connection.addEventListener('click', closeConnectionModal);
