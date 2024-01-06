@@ -4,7 +4,7 @@ body{
         size: map-get($font-sizes , "md" );
     };
     color: color("dark");
-    background-color: color();
+    background-color: color('white');
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
@@ -19,6 +19,9 @@ a{
 .body-wrapper{
     position: relative;
     top: 73px;
+    @include media-breakpoint-up("lg"){
+        margin: 0 20px;
+    }
     }
 .txt-white{
     color: color('white');
@@ -189,5 +192,68 @@ a{
             }
     }
 }
+
+// cards categories
+.category-cards-container{
+    @include display-flex();
+    flex-direction: column;
+    @include media-breakpoint-up("lg"){
+        @include display-grid();
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .category-cards{
+        border: 3px solid color('orange');
+        padding: 20px;
+        @include display-flex();
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+        @include media-breakpoint-up("xl"){
+            padding: 40px
+        }
+        .category-container{
+            @include display-flex();
+            gap: 10px;
+        }
+        background-color: color('black');
+        .category-logo{
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+        .category-pic{
+            width: 80%;
+            img{
+                width: 60%;
+            }
+        }
+        .category-title{
+            background-color: color('white');
+            @include display-flex();
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            margin-top: 20px;
+            @extend .btn-white;
+            cursor: pointer;
+            h2{
+                margin: 0;
+                width: 90%;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-size: font-size('lg');
+            }
+            i{
+                color: color('orange');
+                font-size: font-size('xxl');
+                padding: space(2);
+            }
+        }
+    }
+}
+
 
 

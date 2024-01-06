@@ -9,6 +9,7 @@ header{
     @include media-breakpoint-up("lg"){
         height: 500px;
         top: 55px;
+        margin-bottom: 80px;
     }
     @include media-breakpoint-up("xxl"){
         height: 700px;
