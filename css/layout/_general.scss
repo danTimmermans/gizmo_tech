@@ -244,6 +244,7 @@ a{
                 text-align: center;
                 text-transform: uppercase;
                 letter-spacing: 0.5px;
+                font-size: font-size('md');
                 @include media-breakpoint-up("lg"){
                     font-size: font-size('lg');
                 }               
