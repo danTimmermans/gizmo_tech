@@ -203,8 +203,8 @@ a{
     top: 0;
     z-index: 15000;
     @include media-breakpoint-up("lg"){
-        top: 90px;
-    }
+        top: 0;
+}
     .newsletter-modal-container{
         height: auto;
         background-color: color('white');
