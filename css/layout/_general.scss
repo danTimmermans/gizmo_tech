@@ -193,6 +193,102 @@ a{
     }
 }
 
+// modale newsletter
+
+.newsletter-modal{
+    display: none;
+    flex-direction: column;
+    background-color: color('grey');
+    position: fixed;
+    top: 0;
+    @include media-breakpoint-up("lg"){
+        top: 90px;
+    }
+    .newsletter-modal-container{
+        height: auto;
+        background-color: color('white');
+        width: 100%;
+        @include display-flex();
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        @include media-breakpoint-up("md"){
+            width: 60%;
+        }
+        @include media-breakpoint-up("lg"){
+                width: 50%;
+        }
+        @include media-breakpoint-up("xl"){
+                width: 40%;
+        }
+        @include media-breakpoint-up("xxl"){
+                width: 30%;
+        }
+    }
+    .cross{
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        span{
+            display: block;
+            width: 80%;
+            height: 3px;
+            background: color("orange");
+            position: absolute;
+            pointer-events: none;
+        }
+    }
+    .cross span:nth-child(1){
+        transform:  rotate(-135deg);
+    }
+    .cross span:nth-child(2){
+        transform:  rotate(135deg);
+    }
+    .newsletter-pop-up{
+        width: 100%;
+        @include display-flex();
+        flex-direction: column;
+        align-items: center;
+        p{
+            text-align: center;
+            font-weight: bold;
+            padding: 0 20px;
+        }
+        .newsletter-logo{
+            margin: 20px 0;
+            img{
+                width: 200px;
+            }
+        }
+        .newsletter-input{
+            input{
+                background: color('black');
+                color: color('white');
+                border-radius: 0px;
+            }
+            button{
+                background-color: color('orange');
+                border-radius: 0px;
+                font-weight: bold;
+            }
+        }
+    }
+    .newsletter-pic{
+        margin-bottom: 40px;
+        img{
+            width: 300px
+        }
+    }
+}
+.newsletter-modal-visible{
+    display: flex;
+}
+
 // cards categories
 .category-cards-container{
     @include display-flex();
