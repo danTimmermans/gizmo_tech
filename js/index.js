@@ -75,6 +75,7 @@ let closeSecondaryNav = document.querySelector('.close-secondary-menu');
 
 let secondaryNavVisible = () =>{
     secondaryNav.classList.add('secondary-nav-visible');
+    promoMenu.classList.remove('promo-menu-visible');
 }
 let closeSecondaryNavMenu = () => {
     secondaryNav.classList.remove('secondary-nav-visible');
@@ -113,3 +114,23 @@ secondaryNav.addEventListener('mouseleave', closeSecondaryNavMenu);
 
 secondaryNavMenuItemReparateurs.addEventListener('mouseover', allSecondaryMenuInvisible);
 secondaryNavMenuItemInfo.addEventListener('mouseover', allSecondaryMenuInvisible);
+
+// promo menu
+
+let promoMenu = document.querySelector('.promo-menu');
+let promoBtn = document.querySelector('#promo-btn');
+let closePromoMenuBtn = document.querySelector('.close-promo-menu');
+
+let promoMenuVisible = () =>{
+    promoMenu.classList.add('promo-menu-visible');
+    secondaryNav.classList.remove('secondary-nav-visible');
+
+}
+let promoMenuInvisible = () =>{
+    promoMenu.classList.remove('promo-menu-visible');
+}
+
+
+promoBtn.addEventListener('mouseover', promoMenuVisible);
+promoMenu.addEventListener('mouseleave', promoMenuInvisible);
+closePromoMenuBtn.addEventListener('click', promoMenuInvisible);
