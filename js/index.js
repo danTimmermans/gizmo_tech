@@ -47,15 +47,15 @@ let modalPanierVideVisible = () =>{
 panier.addEventListener('click', modalPanierVideVisible);
 
 // modale newsletter
-let cross = document.querySelector('.cross');
+let cross = document.querySelector('#close-news-letter-modal');
 let modalNewsletter = document.querySelector('.newsletter-modal');
 
-// let modalNewsletterTimer = () => {
-//     modalNewsletter.classList.add('newsletter-modal-visible');
-// }
-// setTimeout(()=> {
-//     modalNewsletterTimer();
-// }, 5000);
+let modalNewsletterTimer = () => {
+    modalNewsletter.classList.add('newsletter-modal-visible');
+}
+setTimeout(()=> {
+    modalNewsletterTimer();
+}, 5000);
 
 let closeNewsletterModal = () => {
     modalNewsletter.classList.remove('newsletter-modal-visible');
