@@ -66,7 +66,7 @@
         </div>
         <!-- navigation principale écran > 992px -->
         <div class="general-navigation">
-            <div class="txt-black bg-orange">
+            <div id="all-products" class="txt-black bg-orange">
                 <span>Tous nos produits</span>
                 <i class="fa-solid fa-caret-down"></i>
             </div>
@@ -89,7 +89,57 @@
                 <span>Promo Gizmo</span>
                 <i class="fa-solid fa-caret-down"></i>
             </div>
-        </div>        
+        </div>
+       <!-- nav secondaires au survol -->
+        <div class="secondary-nav">
+            <div class="secondary-nav-menu">
+                <div id="promo-gizmo" class="secondary-nav-menu-item">
+                    <a href="#">
+                        Nos promos gizmo
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div id="photos-videos" class="secondary-nav-menu-item">
+                    <a href="#">
+                        Photos/vidéos
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div id="reparateur" class="secondary-nav-menu-item">
+                    <a href="#">
+                        Nos réparateurs
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div id="info-contact" class="secondary-nav-menu-item">
+                    <a href="#">
+                        infos/contacts
+                        <i class="fa-solid fa-caret-right"></i>
+                    </a>
+                </div>
+                <div class="secondary-nav-menu-logo">
+                    <img src="material/logos/svg/LOGO-GIZMO.svg" alt="logo gizmo tech">
+                </div>
+            </div>
+            <div class="secondary-nav-menu-item-promo">
+                <a href="#">Hoverboards</a>
+                <a href="#">Neuralizers</a>
+                <a href="#">Lightsabers</a>
+                <a href="#">Sonic screwdrivers</a>
+            </div>
+            <div class="secondary-nav-menu-item-photo">
+                <a href="#">Kubrick Vision</a>
+                <a href="#">FelliniFocus</a>
+                <a href="#">TarantinoTilt</a>
+                <a href="#">LynchDolly</a>
+            </div>
+            <div class="close-secondary-menu">
+                <button class="cross" type="button"  aria-label="close newsletter" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
     </nav>
     <!-- champ de recherche ecran < 992 px -->
     <div id="mobile-search-field" class="mobile-search-field-invisible">

@@ -208,7 +208,6 @@ a{
     .newsletter-modal-container{
         height: auto;
         background-color: color('white');
-        width: 100%;
         @include display-flex();
         flex-direction: column;
         align-items: flex-end;
@@ -225,30 +224,6 @@ a{
         @include media-breakpoint-up("xxl"){
                 width: 30%;
         }
-    }
-    .cross{
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        display: flex;
-        border: none;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        span{
-            display: block;
-            width: 80%;
-            height: 3px;
-            background: color("orange");
-            position: absolute;
-            pointer-events: none;
-        }
-    }
-    .cross span:nth-child(1){
-        transform:  rotate(-135deg);
-    }
-    .cross span:nth-child(2){
-        transform:  rotate(135deg);
     }
     .newsletter-pop-up{
         width: 100%;
@@ -286,6 +261,31 @@ a{
             width: 300px
         }
     }
+}
+// croix de fermeture des menus
+.cross{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    span{
+        display: block;
+        width: 80%;
+        height: 3px;
+        background: color("orange");
+        position: absolute;
+        pointer-events: none;
+    }
+}
+.cross span:nth-child(1){
+    transform:  rotate(-135deg);
+}
+.cross span:nth-child(2){
+    transform:  rotate(135deg);
 }
 .newsletter-modal-visible{
     display: flex;
