@@ -81,7 +81,7 @@ let closeSecondaryNavMenu = () => {
 }
 closeSecondaryNav.addEventListener('click', closeSecondaryNavMenu);
 
-allProducts.addEventListener('click', secondaryNavVisible)
+allProducts.addEventListener('mouseover', secondaryNavVisible)
 
 let secondaryNavMenuItemPromoVisible = () =>{
     secondaryNavMenuItemPromo.classList.add('secondary-nav-menu-item-items-visible');
