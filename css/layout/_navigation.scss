@@ -302,6 +302,9 @@ nav{
         .secondary-nav-visible{
             @include display-grid();
         }
+        a{
+            color: color('black');
+        }
         .close-secondary-menu{
             grid-column-start: 3 ;
             grid-column-end: 4;            
