@@ -356,5 +356,113 @@ a{
     }
 }
 
+// carrousel
+.caroussel{ 
+    background: color('black');
+    margin: 20px 0;
+    .caroussel-1{
+        width: 100%;
+        margin: 0px auto;
+        overflow: hidden;
+        border: 3px solid color('orange');
+        .slider{
+            @include display-flex();
+            animation: caroussel-1 12s infinite ease-in;
+        }
+        a{
+            flex-shrink: 0; 
+            width: 100%;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                width: 100px;
+                margin: 20px;
+            }
+            span{
+                color: color('white');
+                width: auto;
+                text-align: right;
+                padding: 20px;
+                font-size: font-size('xl');
+                display: block;
+                background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.19646799116997793) 0%);
+                }
+        }
+        .slider-container-cask{
+            background: url('../material/pics/cask.png') center/cover;
+        }
+        .slider-container-hifi{
+            background: url('../material/pics/HIFI.jpg') center/cover;
+        }
+        .slider-container-enceintes{
+            background: url('../material/pics/ENCEINTES.jpg') center/cover;
+        }
+        .slider-container-woofer{
+            background: url('../material/pics/WOOFER.jpg') center/cover;
+        }
+        .slider-container-vortex{
+            background: url('../material/pics/vortex.jpg') center/cover;
+        }
+        .slider-container-matos{
+            background: url('../material/pics/gizmo-matos.jpg') center/cover;
+        }
+        .slider-container-brol{
+            background: url('../material/pics/brol.jpg') center/cover;
+        }
+        .slider-container-phototech{
+            background: url('../material/pics/photo-tech.jpg') center/cover;
+        }
+    }
+}
+
+@include media-breakpoint-up("lg"){
+    #caroussel{
+        @include display-flex();
+        justify-content: center;
+        background-color: color('black');
+        gap: 50px;
+    } 
+    .caroussel{
+        width: 40%;
+    }   
+}  
+@include media-breakpoint-up("xxl"){
+    #caroussel{
+        gap: 80px;
+    }
+    .caroussel{
+        width: 30%;
+    }   
+}  
+// 5% par trans => 20%
+// reste divisé par nb de pauses => 80% / 4 = 20% par pause 
+@keyframes caroussel-1{
+    0%,
+    20%{
+        transform: translateX(0);
+    }
+    25%,
+    45%{
+        transform: translateX(-100%);
+    }
+    50%,
+    70%{
+        transform: translateX(-200%);
+    }
+    75%,
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+
+
 
 
