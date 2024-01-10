@@ -235,12 +235,23 @@ nav{
             grid-column-start: 1 ;
             grid-column-end: 4;
             justify-content: space-between;
+            #all-products{
+                a{
+                    display: flex;
+                    justify-content: space-between;
+                    i{
+                        padding-left: 5px;
+                    }
+                }
+            }
             .nav-element{
                 border: 1px solid color('orange');
                 width: 100%;
-                text-align: center;
                 padding: 5px 0;
                 cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         }
         .secondary-nav{
