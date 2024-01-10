@@ -35,7 +35,6 @@ let closeConnectionModal = () =>{
 clientButton.addEventListener('click', toggleConnectionModal);
 connection.addEventListener('click', closeConnectionModal);
 
-
 // modal panier vide
 let panier = document.querySelector('.panier');
 let modalePanierVide = document.querySelector('#modal-panier-vide');
@@ -50,12 +49,12 @@ panier.addEventListener('click', modalPanierVideVisible);
 let cross = document.querySelector('#close-news-letter-modal');
 let modalNewsletter = document.querySelector('.newsletter-modal');
 
-let modalNewsletterTimer = () => {
-    modalNewsletter.classList.add('newsletter-modal-visible');
-}
-setTimeout(()=> {
-    modalNewsletterTimer();
-}, 5000);
+// let modalNewsletterTimer = () => {
+//     modalNewsletter.classList.add('newsletter-modal-visible');
+// }
+// setTimeout(()=> {
+//     modalNewsletterTimer();
+// }, 5000);
 
 let closeNewsletterModal = () => {
     modalNewsletter.classList.remove('newsletter-modal-visible');
@@ -72,6 +71,8 @@ let secondaryNavMenuItemPhoto =document.querySelector('.secondary-nav-menu-item-
 let secondaryNavMenuItemReparateurs = document.querySelector('#reparateur');
 let secondaryNavMenuItemInfo = document.querySelector('#info-contact');
 let closeSecondaryNav = document.querySelector('.close-secondary-menu');
+let logos = document.querySelector('.logos');
+let searchField = document.querySelector('#search-field');
 
 let secondaryNavVisible = () =>{
     secondaryNav.classList.add('secondary-nav-visible');
@@ -82,7 +83,8 @@ let closeSecondaryNavMenu = () => {
 }
 closeSecondaryNav.addEventListener('click', closeSecondaryNavMenu);
 
-allProducts.addEventListener('mouseover', secondaryNavVisible)
+allProducts.addEventListener('mouseover', secondaryNavVisible);
+
 
 let secondaryNavMenuItemPromoVisible = () =>{
     secondaryNavMenuItemPromo.classList.add('secondary-nav-menu-item-items-visible');
@@ -115,11 +117,15 @@ secondaryNav.addEventListener('mouseleave', closeSecondaryNavMenu);
 secondaryNavMenuItemReparateurs.addEventListener('mouseover', allSecondaryMenuInvisible);
 secondaryNavMenuItemInfo.addEventListener('mouseover', allSecondaryMenuInvisible);
 
+logos.addEventListener('mouseover', closeSecondaryNavMenu);
+searchField.addEventListener('mouseover', closeSecondaryNavMenu);
+
 // promo menu
 
 let promoMenu = document.querySelector('.promo-menu');
 let promoBtn = document.querySelector('#promo-btn');
 let closePromoMenuBtn = document.querySelector('.close-promo-menu');
+
 
 let promoMenuVisible = () =>{
     promoMenu.classList.add('promo-menu-visible');
@@ -134,3 +140,6 @@ let promoMenuInvisible = () =>{
 promoBtn.addEventListener('mouseover', promoMenuVisible);
 promoMenu.addEventListener('mouseleave', promoMenuInvisible);
 closePromoMenuBtn.addEventListener('click', promoMenuInvisible);
+clientButton.addEventListener('mouseover', promoMenuInvisible );
+panier.addEventListener('mouseover', promoMenuInvisible);
+searchField.addEventListener('mouseover', promoMenuInvisible);
