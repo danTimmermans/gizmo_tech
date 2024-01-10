@@ -102,6 +102,7 @@
         }
         .header-logo-svg{
             img{
+                width: 100px;
                 @include media-breakpoint-up("md"){
                 width: 200px;
                 }
