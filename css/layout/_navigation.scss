@@ -183,7 +183,8 @@ nav{
 }
 
 
-//nav responsive
+//nav responsive ecran > 992
+
 @include media-breakpoint-up("lg"){
     nav{
         display: grid;

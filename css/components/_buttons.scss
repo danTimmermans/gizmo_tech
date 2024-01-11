@@ -1,15 +1,3 @@
-// .burger-btn {
-//     background-color: transparent;
-//     // border: none;
-//     padding: map-get($spaces, 2 );
-//     cursor: pointer;
-//     @include border-radius();
-//      div{
-//         border: 2px solid color(black);
-//         width: 25px;
-//         margin: map-get($spaces , 1 ); ;
-//     }
-// }
 .btn{
     display: flex;
     flex-direction: row;
@@ -20,7 +8,6 @@
     border: none;
     padding: space(2);
     cursor: pointer;
-    // @include border-radius();
 }
 // defini couleur avec effet hover
 @each $color, $value in $colors{
